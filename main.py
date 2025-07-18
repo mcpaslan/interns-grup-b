@@ -23,7 +23,7 @@ reflect101 = cv.copyMakeBorder(img, 10, 10, 10, 10, cv.BORDER_REFLECT_101)
 wrap = cv.copyMakeBorder(img, 10, 10, 10, 10, cv.BORDER_WRAP)
 constant = cv.copyMakeBorder(img, 10, 10, 10, 10, cv.BORDER_CONSTANT, value=BLUE)
 
-# Görüntüleri matplotlib ile çiz (matplotlib RGB bekler ama burada dönüşüm yapılmadı)
+# Görüntüleri matplotlib ile çiz
 plt.subplot(231), plt.imshow(img), plt.title('ORIGINAL')
 plt.subplot(232), plt.imshow(replicate), plt.title('REPLICATE')
 plt.subplot(233), plt.imshow(reflect), plt.title('REFLECT')
