@@ -193,3 +193,26 @@ for key in ogrenci:
 
 for anahtar, deger in ogrenci.items():
     print(f"{anahtar} -> {deger}")
+
+kisi = {"isim": "ufuk", "yas": 20,"cinsiyet": "erkek", }
+print(kisi)
+print(kisi["isim"])
+
+kisi.update({"isim": "Vural", "yas": 21})
+print(kisi)
+
+kisi["id"] = 12345
+print(kisi)
+
+del kisi["id"]
+print(kisi)
+
+for x in kisi:
+    print(x)
+
+print(kisi.keys())
+print(kisi.values())
+print(kisi.items())
+
+for k,v in kisi.items():
+    print(k,v)
