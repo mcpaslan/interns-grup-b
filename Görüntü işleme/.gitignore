@@ -1,0 +1,38 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# Ortam dosyaları
+.venv/
+env/
+venv/
+*.env
+
+# Jupyter notebook geçici klasörleri
+.ipynb_checkpoints/
+
+# IDE ve editör dosyaları
+.vscode/
+.idea/
+
+# Veriler ve ağırlık dosyaları
+*.mp4
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.pt
+*.h5
+*.weights
+
+# Log ve geçici dosyalar
+*.log
+*.tmp
+*.bak
+.DS_Store
+
+# Notebook output klasörü
+outputs/
