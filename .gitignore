@@ -1,0 +1,16 @@
+# Sanal ortam klasörü
+.venv/
+venv/
+env/
+
+# Python derleme çıktıları
+__pycache__/
+*.pyc
+*.pyd
+
+# İşletim sistemleri tarafından oluşturulan dosyalar
+.DS_Store
+Thumbs.db
+
+# Paket yöneticileri tarafından oluşturulan dosyalar
+site-packages/
