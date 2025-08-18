@@ -1,0 +1,62 @@
+{
+    "0": {
+        "last_status": "Sitting",
+        "start_time": 232,
+        "history": [
+            {
+                "status": "Sitting",
+                "start_frame": 0,
+                "end_frame": 33,
+                "duration_sec": 1.38
+            },
+            {
+                "status": "Standing",
+                "start_frame": 33,
+                "end_frame": 35,
+                "duration_sec": 0.08
+            },
+            {
+                "status": "Sitting",
+                "start_frame": 35,
+                "end_frame": 190,
+                "duration_sec": 6.46
+            },
+            {
+                "status": "Standing",
+                "start_frame": 190,
+                "end_frame": 232,
+                "duration_sec": 1.75
+            },
+            {
+                "status": "Sitting",
+                "start_frame": 232,
+                "end_frame": 240,
+                "duration_sec": 0.33
+            }
+        ]
+    },
+    "1": {
+        "last_status": "Standing",
+        "start_time": 130,
+        "history": [
+            {
+                "status": "Standing",
+                "start_frame": 130,
+                "end_frame": 240,
+                "duration_sec": 4.59
+            }
+        ]
+    },
+    "2": {
+        "last_status": "Sitting",
+        "start_time": 133,
+        "history": [
+            {
+                "status": "Sitting",
+                "start_frame": 133,
+                "end_frame": 240,
+                "duration_sec": 4.46
+            }
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+person_id,status,start_frame,end_frame,duration_sec
+0,Sitting,0,33,1.38
+0,Standing,33,35,0.08
+0,Sitting,35,190,6.46
+0,Standing,190,232,1.75
+0,Sitting,232,240,0.33
+1,Standing,130,240,4.59
+2,Sitting,133,240,4.46

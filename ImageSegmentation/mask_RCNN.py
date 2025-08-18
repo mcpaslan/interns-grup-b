@@ -15,10 +15,10 @@ img_bgr = cv2.imread(img_path)
 assert img_bgr is not None, f"Resim Bulunamadı: {img_path}"  # Resim bulunmazsa hata ver
 img_rgb = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB)  # OpenCV BGR formatında okur → RGB'ye çevir
 
-# Resmi tensöre dönüştür (modelin anlayacağı formata)
+# Resmi tensöre dönüştür (modelin anlayacağı formata).
 tensor = to_tensor(img_rgb).to(device)
 
-# Modelden tahmin al (gradients kapalı → daha hızlı)
+# Modelden tahmin al (gradients kapalı → daha hızlı).
 with torch.no_grad():
     outputs = model([tensor])
 
@@ -30,7 +30,7 @@ labels = out["labels"].numpy()   # Nesne sınıf etiketleri (COCO id)
 masks = out["masks"].numpy()     # Nesne maskeleri (piksel bazlı)
 
 # Parametreler
-score_tresh = 0.5  # Güven eşiği (%50 altında olan nesneler gözükmeyecek)
+score_tresh = 0.5  # Güven eşiği %50
 alpha = 0.5        # Maske saydamlık değeri
 overlay = img_bgr.copy()  # Çizim yapılacak kopya resim..
 

@@ -13,10 +13,10 @@ model = YOLO(model_path)
 # Görüntüyü oku
 image = cv2.imread(image_path)
 
-# Tahmin yap
+# Tahmin yap.
 result = model.predict(source=image, conf=conf_threshold)[0]
 
-# Mask bilgisi al
+# Mask bilgisi al.
 masks = result.masks.data.cpu().numpy() if result.masks is not None else []
 
 # Eğer mask yoksa boş bir maske oluştur
@@ -27,7 +27,7 @@ else:
     for i in range(len(masks)):
         semantic_mask |= masks[i].astype(bool)
 
-# Maskeyi 3 kanallı hale getir
+# Maskeyi 3 kanallı hale getir.
 semantic_mask_uint8 = semantic_mask.astype(np.uint8) * 255
 semantic_colored = np.stack([semantic_mask_uint8] * 3, axis=-1)
 

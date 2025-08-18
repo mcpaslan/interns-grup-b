@@ -4,7 +4,7 @@ from ultralytics import YOLO
 import collections
 import time
 
-# Model yükle
+# model yükle
 model = YOLO("models/yolov8n-pose.pt")  # Daha iyi doğruluk için medium model
 
 # Video yükle
