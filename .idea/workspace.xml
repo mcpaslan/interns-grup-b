@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d9b813a-61d6-4bcb-9beb-a4673312dcf3" name="Changes" comment="README.md added" />
+    <list default="true" id="6d9b813a-61d6-4bcb-9beb-a4673312dcf3" name="Changes" comment="README.md added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,22 +45,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.1.executor": "Run",
-    "Python.human_detect.executor": "Run",
-    "Python.human_detect_and_count.executor": "Run",
-    "Python.poseDetect.executor": "Run",
-    "Python.runningPose.executor": "Run",
-    "Python.sittingPose.executor": "Run",
-    "Python.trained_yolo_ex.executor": "Run",
-    "Python.walkingPose.executor": "Run",
-    "Python.xcvxc.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/masla/PycharmProjects/interns-grup-b/PoseEstimation/videos"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.human_detect.executor&quot;: &quot;Run&quot;,
+    &quot;Python.human_detect_and_count.executor&quot;: &quot;Run&quot;,
+    &quot;Python.poseDetect.executor&quot;: &quot;Run&quot;,
+    &quot;Python.runningPose.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sittingPose.executor&quot;: &quot;Run&quot;,
+    &quot;Python.trained_yolo_ex.executor&quot;: &quot;Run&quot;,
+    &quot;Python.walkingPose.executor&quot;: &quot;Run&quot;,
+    &quot;Python.xcvxc.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/masla/PycharmProjects/interns-grup-b/PoseEstimation/videos&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\masla\PycharmProjects\interns-grup-b\PoseEstimation\videos" />
