@@ -20,6 +20,7 @@ if uploaded_file is not None:
     st.image(cv2.cvtColor(processed_image, cv2.COLOR_BGR2RGB), caption='İşlenmiş Görüntü', use_container_width=True)
 
     if found_products:
+        # Bu döngü artık benzersiz ürün listesi üzerinde çalışacak.
         for product in found_products:
             st.success(f"**Ürün Bulundu:** {product['tam_isim']}")
             st.markdown(f"**Marka:** {product.get('marka', 'N/A')}")

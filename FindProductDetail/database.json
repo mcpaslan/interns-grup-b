@@ -63,14 +63,14 @@
   "heinz_domatesli_ketcap": {
     "tam_isim": "Heinz Domatesli Ketçap",
     "marka": "Heinz",
-    "anahtar_kelimeler": ["heinz", "tomato", "ketchup", "tomato ketchup"],
+    "anahtar_kelimeler": ["heinz", "tomato", "ketchup", "tomato ketchup", "ketçap", "domates"],
     "icindekiler": [
       "Domates püresi (100 g ketçap için 148 g domates)",
       "Sirke",
       "Şeker",
       "Tuz",
-      "Baharat ve bitki özütleri (kereviz içerebilir)",
-      "Baharatlar"
+      "Baharat ve bitki özütleri (kereviz içerebilir)"
+
     ],
     "besin_degerleri": {
       "enerji_100g": "112 kcal / 470 kJ",
@@ -81,5 +81,31 @@
       "protein": "1.1 g",
       "tuz": "1.3 g"
     }
+  },"kit_kat_chunky": {
+    "tam_isim": "KitKat Chunky",
+    "marka": "Nestle",
+    "anahtar_kelimeler": ["Kit", "Kat", "KitKat", "kitkat",
+      "chunky", "CHUNKY", "NESTLE", "nestle"],
+    "icindekiler": [
+      "Şeker",
+      "Buğday unu",
+      "Kuru yağsız Süt",
+      "kakao yağı",
+      "bitkisel yağlar (hurma, karite)",
+      "süt yağı",
+      "emülgatör (ayçiçeği lesitini)",
+      "kabartıcı (sodyum bikarbonat)"
+
+    ],
+    "besin_degerleri": {
+      "enerji": "207 kcal / 868 kJ",
+      "yag": "25.6 g",
+      "doymus_yag": "14.2 g",
+      "karbonhidrat": "65.1 g",
+      "seker": "55.0 g",
+      "lif": "1.7 g",
+      "protein": "5.4 g",
+      "tuz": "0.18 g"
+  }
   }
 }

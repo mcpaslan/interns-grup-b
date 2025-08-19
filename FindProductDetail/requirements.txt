@@ -1,0 +1,9 @@
+# requirements.txt
+
+streamlit
+numpy
+opencv-python
+easyocr
+ultralytics
+thefuzz
+python-Levenshtein
