@@ -27,10 +27,10 @@ def preprocess_image(img_path):
 
     # Adaptif thresholding ile görüntüyü siyah-beyaz (ikili) formata dönüştür.
     binary_image = cv2.adaptiveThreshold(
-        blur, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 4
+        blur, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 5
     )
 
-    # Morfolojik "açma" işlemi ile görüntüdeki küçük noktaları ve gürültüleri temizle.
+    # görüntüdeki küçük noktaları ve gürültüleri temizle.
     # Bu işlem, harflerin bütünlüğünü bozmadan istenmeyen küçük lekeleri yok eder.
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (2, 2))
     binary_image = cv2.morphologyEx(binary_image, cv2.MORPH_OPEN, kernel)
@@ -152,7 +152,7 @@ def extract_data_with_logic(text):
 
 if __name__ == "__main__":
 
-    image_file = 'images/su.jpg'
+    image_file = 'images/elektrik.jpg'
     processed_image = preprocess_image(image_file)
 
     if processed_image is not None:

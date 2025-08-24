@@ -1,0 +1,116 @@
+{
+  "nutella": {
+    "tam_isim": "Nutella Kakaolu Fındık Kreması",
+    "marka": "Ferrero",
+    "anahtar_kelimeler": ["nutella",
+      "ferrero",
+      "Nutella",
+      "utella",
+      "Hutella",
+      "hutella"],
+    "icindekiler": [
+      "Şeker",
+      "Palm Yağı",
+      "Fındık (%13)",
+      "Yağsız Süt Tozu (%8.7)"
+    ],
+    "besin_degerleri": {
+      "enerji_100g": "539 kcal / 2252 kJ",
+      "yag": "30,9 g",
+      "karbonhidrat": "57,5 g",
+      "seker": "56,3 g",
+      "protein": "6,3 g",
+      "tuz": "0,107 g"
+    }
+  },
+  "coca-cola": {
+    "tam_isim": "Coca-Cola Orijinal Tat",
+    "marka": "The Coca-Cola Company",
+    "anahtar_kelimeler": [
+      "coca-cola",
+      "coke", "kola",
+      "original",
+      "orijinal",
+      "taste",
+      "original taste",
+      "sugar",
+      "şeker"],
+    "icindekiler": [
+      "Su",
+      "Şeker",
+      "Karbondioksit"
+    ],
+    "besin_degerleri": {
+      "enerji": "180 kJ / 42 kcal",
+      "Yağ": "0 g",
+      "Doymuş Yağ": "0 g",
+      "Karbonhidrat": "10.6 g",
+      "Şeker": "10.6 g",
+      "Protein": "0 g"
+    }
+  },
+  "hiq-creatine": {
+    "tam_isim": "HIQ Creatine 100% PURE MONOHYDRATE",
+    "marka": "HIQ Nutrition",
+    "anahtar_kelimeler": ["hiq", "creatine", "kreatin", "monohydrate", "pure monohydrate"],
+    "icindekiler": [
+      "Kreatin Monohidrat"
+    ],
+    "besin_degerleri": {
+      "porsiyon": "5g",
+      "enerji": "0 kcal",
+      "Yağ": "0 g",
+      "Karbonhidrat": "0 g",
+      "Protein": "0 g",
+      "Kreatin Monohidrat": "5g"
+    }
+  },
+  "heinz_domatesli_ketcap": {
+    "tam_isim": "Heinz Domatesli Ketçap",
+    "marka": "Heinz",
+    "anahtar_kelimeler": ["heinz", "tomato", "ketchup", "tomato ketchup", "ketçap", "domates"],
+    "icindekiler": [
+      "Domates püresi (100 g ketçap için 148 g domates)",
+      "Sirke",
+      "Şeker",
+      "Tuz",
+      "Baharat ve bitki özütleri (kereviz içerebilir)"
+
+    ],
+    "besin_degerleri": {
+      "enerji_100g": "112 kcal / 470 kJ",
+      "yag": "0.1 g",
+      "doymus_yag": "0 g",
+      "karbonhidrat": "26.9 g",
+      "seker": "25.4 g",
+      "protein": "1.1 g",
+      "tuz": "1.3 g"
+    }
+  },"kit_kat_chunky": {
+    "tam_isim": "KitKat Chunky",
+    "marka": "Nestle",
+    "anahtar_kelimeler": ["Kit", "Kat", "KitKat", "kitkat",
+      "chunky", "CHUNKY", "NESTLE", "nestle"],
+    "icindekiler": [
+      "Şeker",
+      "Buğday unu",
+      "Kuru yağsız Süt",
+      "kakao yağı",
+      "bitkisel yağlar (hurma, karite)",
+      "süt yağı",
+      "emülgatör (ayçiçeği lesitini)",
+      "kabartıcı (sodyum bikarbonat)"
+
+    ],
+    "besin_degerleri": {
+      "enerji": "207 kcal / 868 kJ",
+      "yag": "25.6 g",
+      "doymus_yag": "14.2 g",
+      "karbonhidrat": "65.1 g",
+      "seker": "55.0 g",
+      "lif": "1.7 g",
+      "protein": "5.4 g",
+      "tuz": "0.18 g"
+  }
+  }
+}
