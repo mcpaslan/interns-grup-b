@@ -27,3 +27,11 @@ Tür: Su Faturası
 Son Ödeme Tarihi: 11/08/2023
 Geçmiş Dönem Borcu: 0,00 TL
 -------------------------------------
+```
+# Kimlikteki önemli bilgilerin çıkarılması
+ocr_bouindingbox.py dosyasında, Python, OpenCV ve Tesseract OCR kullanarak kimlik kartlarından; 
+TC, AD, SOYAD, DOĞUM TARİHİ gibi bilgilerin çıkarılması amaçlanmıştır.
+
+
+<img src="results/kimlik_sonuc.jpg" alt="OCR Sonucu kimlik görüntüsü" width="500">
+
