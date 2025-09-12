@@ -1,35 +1,63 @@
-1️⃣ Kişi Sayımı (People Counting)
+1) Genel OCR ve TCKN
 
-Bu proje, canlı video görüntülerinde kaç kişinin bulunduğunu otomatik olarak sayar.
-Kamera görüntüsü üzerinde YOLO gibi nesne tespit modelleri kullanılarak kişiler algılanır. Ardından takip algoritmaları (örneğin ByteTrack veya DeepSORT) sayesinde, her kişiye benzersiz bir ID atanır. Bu ID’ler sayesinde aynı kişi, farklı karelerde yeniden algılansa bile tekrar sayılmaz.
-Ekranda hem o anki kişi sayısı hem de zaman içinde pürüzsüzleştirilmiş (EMA yöntemi ile filtrelenmiş) kişi sayısı gösterilir.
+Görsellerden Türkçe+İngilizce metin tanıma (PSM/OEM/DPI ayarlı).
 
-2️⃣ Davranış Analizi (Action Recognition)
+Önişleme zinciri: gri, gürültü azaltma, adaptive/Otsu threshold, morfoloji, isteğe bağlı deskew.
 
-Sistemin amacı sadece kişi saymak değil, aynı zamanda her kişinin ne yaptığını anlamaktır.
-Bunun için iki yöntem kullanılır:
+ROI seçimiyle belli bir alanı hızlı ve daha doğru okuma.
 
-Poz tabanlı analiz (Pose Estimation): İnsan vücudundaki eklem noktaları (örneğin diz, kalça, ayak bileği) tespit edilir. Bu noktalar arasındaki açılar hesaplanarak kişinin “oturduğu”, “yürüdüğü” veya “koştuğu” anlaşılır.
+TCKN akışı: özel önişleme (deskew yok), olası karışan karakterleri eşleme, regex ile aday toplama, d10/d11 kontrol toplamı ile doğrulama.
 
-Hız tabanlı analiz: Kişinin merkez noktası kareler arasında ne kadar yer değiştirmişse, bu hızdan yürüyüp yürümediği veya koşup koşmadığı anlaşılır.
+Kelime kutuları (bounding box) ve güven skorlarıyla görsel üstünde işaretleme.
 
-Her kişi için, hangi hareketi yaptığı ve o hareketi ne kadar süredir yaptığı ekranda gösterilir.
+2) Metin Temizleme ve Düzeltme
 
-3️⃣ Çok Kişili Sahnelerde Performans Yönetimi (Performance Optimization in Crowded Scenes)
+Unicode normalizasyonu, sık görülen tipografik karakterlerin sadeleştirilmesi.
 
-Bir sahnede az sayıda kişi varken sistem rahat çalışabilir, ancak kalabalık ortamlarda hem kişi sayımı hem de davranış analizi yapmak işlemci (CPU/GPU) açısından daha zor hale gelir.
-Bunu çözmek için projede bazı optimizasyonlar uygulanır:
+Boşluk/çizgi/artık karakterlerin temizlenmesi.
 
-Çözünürlüğü düşürmek (imgsz=416/480) → Daha az piksel işlenir, hız artar.
+(Opsiyonel) RapidFuzz ile sözlüklere göre yazım yakınsama düzeltmesi.
 
-Kare atlama (vid_stride=2/3) → Her kareyi değil, her 2. veya 3. kareyi işleyerek CPU/GPU yükünü azaltır.
+3) Alan (Field) Çıkarımı
 
-Sınıf filtresi (sadece “person” sınıfı algılanır) → Gereksiz nesneler işlenmez.
+Metinden TCKN, tarih, telefon, e-posta gibi yapısal alanların regex ile yakalanması.
 
-Maksimum tespit sayısını sınırlamak (max_det) → Çok kalabalıkta bile sistem belli sayının üzerinde nesne işlemez.
+Büyük harf bloklarından ad-soyad adaylarının çıkarılması.
 
-FP16 (yarı hassasiyet) ile GPU hızlandırma → Aynı işi daha az veriyle yaparak hız kazanılır.
+4) OCR + NLP (Varlık Tanıma)
 
-Pose hesaplamasını seyrekleştirme (her N. karede poz analizi) → Davranış tespiti için her karede eklem noktaları hesaplamak yerine belli aralıklarla hesaplanır.
+SpaCy ile metin üzerinde kişi/kurum/yer vb. varlık etiketleri (model mevcutsa).
 
-Bu sayede sistem, kalabalık sahnelerde bile hem kişi sayımını hem de davranış analizini aynı anda, akıcı şekilde yapabilir.
+Metin sonucu ve varlık listelerini tablo halinde görüntüleme.
+
+5) Form Otomasyonu
+
+OCR metninden alanları toplayıp JSON/CSV çıktıları üretme.
+
+Basit form doldurma/entegrasyon senaryolarına temel oluşturma.
+
+6) Tablo Tanıma (PDF/Görsel)
+
+Camelot ile PDF’lerden tablo çıkarımı ve CSV indirme.
+
+Görsellerde çizgisel grid algılama (deneysel) + hücre bazlı OCR ile tablo oluşturma.
+
+Arayüz & Kullanım
+
+Streamlit sekmeleri (28–34):
+
+28) TR OCR
+
+Temizleme
+
+Post-Processing
+
+Alan Çıkarımı
+
+OCR + NLP
+
+Form Otomasyonu
+
+Tablo Tanıma
+
+Her sekmede örnek dosya yükleme, ayar slider’ları ve indirme butonları bulunur.
